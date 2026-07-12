@@ -1,0 +1,665 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Rent this beautiful 7+2 detached triplex villa in Urla İskele. Just 150m from the sea, featuring a 320 sqm garden, sea and Karantina Island views. Ideal for up to 18 guests."
+    />
+    <meta
+      name="keywords"
+      content="Urla İskele kiralık villa, Urla rental house, triplex Urla, Izmir vacation rental, Karantina Island view"
+    />
+    <title>Urla Coastal Retreat | 7+2 Triplex Villa</title>
+
+    <!-- Import Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* CSS Reset & Modern Coastal Variables */
+      :root {
+        --primary: #1e3a8a; /* Deep Navy */
+        --accent: #0ea5e9; /* Vibrant Ocean Blue */
+        --whatsapp: #25d366; /* WhatsApp Green */
+        --whatsapp-dark: #128c7e;
+        --text-main: #334155;
+        --text-light: #64748b;
+        --bg-page: #f8fafc;
+        --bg-card: #ffffff;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        line-height: 1.7;
+        color: var(--text-main);
+        background-color: var(--bg-page);
+      }
+
+      /* Navigation & Language Switcher */
+      header {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        color: var(--primary);
+        padding: 1rem 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 4px 15px -5px rgba(0, 0, 0, 0.1);
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .logo {
+        font-size: 1.5rem;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+      }
+
+      .lang-switch {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+      }
+      .lang-switch button {
+        background: transparent;
+        border: 1px solid var(--text-light);
+        color: var(--text-light);
+        padding: 6px 12px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: 0.85rem;
+        cursor: pointer;
+        border-radius: 6px;
+        transition: all 0.3s ease;
+      }
+      .lang-switch button:hover {
+        background: rgba(14, 165, 233, 0.1);
+        color: var(--primary);
+        border-color: var(--primary);
+      }
+      .lang-switch button.active {
+        background: var(--accent);
+        border-color: var(--accent);
+        color: white;
+        box-shadow: 0 4px 10px rgba(14, 165, 233, 0.3);
+      }
+
+      /* NEW Split Layout Hero Section */
+      .hero {
+        display: flex;
+        align-items: stretch;
+        min-height: 85vh;
+        background: var(--bg-card);
+        overflow: hidden;
+      }
+      .hero-content-wrapper {
+        flex: 1;
+        padding: 4rem 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        min-width: 300px;
+      }
+      .hero h1 {
+        font-size: clamp(2.5rem, 4vw, 4rem);
+        font-weight: 700;
+        color: var(--primary);
+        line-height: 1.15;
+        margin-bottom: 1.5rem;
+      }
+      .hero p {
+        font-size: clamp(1.1rem, 1.5vw, 1.25rem);
+        font-weight: 300;
+        color: var(--text-light);
+        margin-bottom: 2.5rem;
+        max-width: 600px;
+      }
+      .hero-btn {
+        display: inline-block;
+        background: var(--accent);
+        color: white;
+        padding: 15px 35px;
+        border-radius: 50px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        box-shadow: 0 10px 20px -5px rgba(14, 165, 233, 0.4);
+      }
+      .hero-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 15px 25px -5px rgba(14, 165, 233, 0.5);
+        background: #0284c7; /* Slightly darker blue */
+      }
+      .hero-image-wrapper {
+        flex: 1;
+        min-width: 300px;
+        position: relative;
+      }
+      .hero-image-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-bottom-left-radius: 80px; /* Soft modern curve */
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Main Content Structure */
+      .container {
+        max-width: 1200px;
+        margin: 4rem auto;
+        padding: 0 5%;
+      }
+
+      section {
+        margin-bottom: 3rem;
+        background: var(--bg-card);
+        padding: 3rem;
+        border-radius: 16px;
+        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+      }
+
+      h2 {
+        color: var(--primary);
+        font-size: clamp(1.5rem, 3vw, 2rem);
+        margin-bottom: 1.5rem;
+        display: inline-block;
+        position: relative;
+      }
+      h2::after {
+        content: "";
+        position: absolute;
+        width: 60%;
+        height: 4px;
+        background: var(--accent);
+        bottom: -8px;
+        left: 0;
+        border-radius: 2px;
+      }
+
+      /* Modern Grid Layouts */
+      .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+      }
+      .feature-box {
+        background: var(--bg-page);
+        padding: 2rem;
+        border-radius: 12px;
+        border-top: 5px solid var(--accent);
+        transition:
+          transform 0.3s ease,
+          box-shadow 0.3s ease;
+      }
+      .feature-box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 25px -5px rgba(0, 0, 0, 0.1);
+      }
+      .feature-box h3 {
+        color: var(--primary);
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+      }
+
+      /* Media Section */
+      .media-section video {
+        width: 100%;
+        max-height: 550px;
+        object-fit: cover;
+        border-radius: 12px;
+        box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.2);
+        margin-top: 1rem;
+      }
+
+      /* Amenities List */
+      .amenities-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+        list-style: none;
+        margin-top: 1.5rem;
+      }
+      .amenities-list li {
+        position: relative;
+        padding-left: 35px;
+        font-weight: 500;
+        color: var(--text-main);
+      }
+      .amenities-list li::before {
+        content: "🌊";
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-size: 1.1rem;
+      }
+
+      /* Contact Section */
+      .contact-section {
+        text-align: center;
+        background: linear-gradient(135deg, #f0fdfa 0%, #e0f2fe 100%);
+        border: 1px solid #bae6fd;
+      }
+      .whatsapp-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background-color: var(--whatsapp);
+        color: white;
+        font-size: 1.1rem;
+        font-weight: 600;
+        padding: 15px 30px;
+        border-radius: 50px;
+        text-decoration: none;
+        margin-top: 1.5rem;
+        transition:
+          background-color 0.3s ease,
+          transform 0.2s ease;
+        box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+      }
+      .whatsapp-btn:hover {
+        background-color: var(--whatsapp-dark);
+        transform: scale(1.05);
+      }
+      .whatsapp-btn svg {
+        width: 24px;
+        height: 24px;
+        fill: currentColor;
+      }
+
+      /* Footer */
+      footer {
+        background: var(--primary);
+        color: white;
+        text-align: center;
+        padding: 3rem 5%;
+        margin-top: 2rem;
+      }
+      .price-tag {
+        font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+        font-weight: 600;
+        color: #bae6fd;
+        margin: 15px auto;
+        padding: 15px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 8px;
+        display: inline-block;
+        max-width: 100%;
+      }
+      .footer-law {
+        font-size: 0.85rem;
+        color: #94a3b8;
+        margin-top: 20px;
+      }
+
+      /* Mobile Adjustments */
+      @media (max-width: 900px) {
+        .hero {
+          flex-direction: column-reverse;
+        }
+        .hero-image-wrapper {
+          height: 400px;
+          width: 100%;
+        }
+        .hero-image-wrapper img {
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 40px;
+        }
+        .hero-content-wrapper {
+          padding: 4rem 5%;
+          align-items: center;
+          text-align: center;
+        }
+      }
+      @media (max-width: 768px) {
+        header {
+          flex-direction: column;
+          text-align: center;
+          padding: 1rem;
+        }
+        .lang-switch {
+          margin-top: 10px;
+          justify-content: center;
+        }
+        section {
+          padding: 2rem 1.5rem;
+        }
+        .features-grid {
+          gap: 1.5rem;
+        }
+        .whatsapp-btn {
+          width: 100%;
+          padding: 15px 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo" data-key="logoTitle">Urla Coastal Retreat</div>
+      <div class="lang-switch">
+        <button onclick="setLanguage('tr')" id="btn-tr" class="active">
+          TR
+        </button>
+        <button onclick="setLanguage('en')" id="btn-en">EN</button>
+        <button onclick="setLanguage('de')" id="btn-de">DE</button>
+        <button onclick="setLanguage('ru')" id="btn-ru">RU</button>
+      </div>
+    </header>
+
+    <div class="hero">
+      <div class="hero-content-wrapper">
+        <h1 data-key="heroTitle">Tranquil Seaside Triplex in Urla</h1>
+        <p data-key="heroSubtitle">
+          Just 150m from the sea • Accommodates up to 18 guests • Stunning
+          Karantina Island Views
+        </p>
+        <a href="#contact" class="hero-btn" data-key="heroBtn">Book Now</a>
+      </div>
+      <div class="hero-image-wrapper">
+        <img src="DJI_0330-min.jpg" alt="Urla Triplex Villa Aerial View" />
+      </div>
+    </div>
+
+    <main class="container">
+      <section class="media-section">
+        <h2 data-key="tourTitle">Aerial Tour</h2>
+        <video controls autoplay muted loop playsinline>
+          <source src="DJI_0329.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </section>
+
+      <section>
+        <h2 data-key="aboutTitle">About the Property</h2>
+        <p data-key="aboutDesc">
+          Our detached 7+2 triplex house offers an extraordinary location for
+          those seeking a peaceful seaside retreat. Located just 150 meters from
+          the sea, nestled within a 320 square meter garden, it boasts sea and
+          island views from its terraces and lush verandas. With two kitchens
+          and a total of five bathrooms, it can comfortably accommodate up to 18
+          people.
+        </p>
+      </section>
+
+      <section>
+        <h2 data-key="floorsTitle">Floor Layouts</h2>
+        <div class="features-grid">
+          <div class="feature-box">
+            <h3 data-key="groundFloor">Ground Floor</h3>
+            <p data-key="groundFloorDesc">
+              Comfortable living room with A/C, fireplace, and 8-person dining
+              table. Modern kitchen, spacious front and back verandas with
+              outdoor dining and seating. Includes a double bedroom with a
+              workspace and a bathroom.
+            </p>
+          </div>
+          <div class="feature-box">
+            <h3 data-key="firstFloor">First Floor</h3>
+            <p data-key="firstFloorDesc">
+              Features three bedrooms including a 4-person suite with an
+              en-suite youth room and master bedroom. All rooms are equipped
+              with double beds, A/C, TVs, balconies, and bathrooms.
+            </p>
+          </div>
+          <div class="feature-box">
+            <h3 data-key="atticFloor">Attic (Top Floor)</h3>
+            <p data-key="atticFloorDesc">
+              An independent flat featuring a living room, open American
+              kitchen, 6-person dining table, and a private terrace. Includes
+              two bedrooms (one double, one twin), A/C, TV, and an integrated
+              water filtration system.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 data-key="amenitiesTitle">Amenities & Location</h2>
+        <ul class="amenities-list">
+          <li data-key="am1">High-speed Wi-Fi on every floor</li>
+          <li data-key="am2">
+            Fully equipped kitchens (Filter, Turkish, Capsule)
+          </li>
+          <li data-key="am3">2 washing machines & 2 dishwashers</li>
+          <li data-key="am4">Free parking right in front of the house</li>
+          <li data-key="am5">Walking distance to Kum Denizi Beach</li>
+          <li data-key="am6">30 mins to Izmir city center and Çeşme</li>
+        </ul>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact-section">
+        <h2 data-key="contactTitle">Get in Touch</h2>
+        <p data-key="contactDesc">
+          Have questions or want to check availability? Message us directly on
+          WhatsApp for a quick response.
+        </p>
+        <!-- REPLACE 'YOUR_PHONE_NUMBER' with your number, e.g., 905551234567 -->
+        <a
+          href="https://wa.me/YOUR_PHONE_NUMBER"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="whatsapp-btn"
+        >
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+            />
+          </svg>
+          <span data-key="contactBtn">Chat on WhatsApp</span>
+        </a>
+      </section>
+    </main>
+
+    <footer>
+      <p
+        data-key="footerRules"
+        style="font-size: clamp(0.9rem, 2vw, 1.1rem); font-weight: 300"
+      >
+        Minimum stay: 3 nights. Check-in: 17:00 | Check-out: 11:00.
+      </p>
+      <div class="price-tag" data-key="footerPrice">
+        35,000 TL / day (Valid for up to 8 guests).
+      </div>
+      <p class="footer-law">
+        Registration / Tescil Bilgileri: 35-2362<br />
+        <span data-key="footerLaw"
+          >Mandatory ID notification for all staying guests is required by
+          law.</span
+        >
+      </p>
+    </footer>
+
+    <!-- Multilingual JavaScript Dictionary -->
+    <script>
+      const translations = {
+        en: {
+          logoTitle: "Urla Coastal Retreat",
+          heroTitle: "Tranquil Seaside Triplex in Urla",
+          heroSubtitle:
+            "Just 150m from the sea • Accommodates up to 18 guests • Stunning Karantina Island Views",
+          heroBtn: "Book Now",
+          tourTitle: "Aerial Tour",
+          aboutTitle: "About the Property",
+          aboutDesc:
+            "Our detached 7+2 triplex house offers an extraordinary location for those seeking a peaceful seaside retreat. Located just 150 meters from the sea, nestled within a 320 square meter garden, it boasts sea and island views from its terraces and lush verandas. With two kitchens and a total of five bathrooms, it can comfortably accommodate up to 18 people.",
+          floorsTitle: "Floor Layouts",
+          groundFloor: "Ground Floor",
+          groundFloorDesc:
+            "Comfortable living room with A/C, fireplace, and 8-person dining table. Modern kitchen, spacious front and back verandas with outdoor dining and seating. Includes a double bedroom with a workspace and a bathroom.",
+          firstFloor: "First Floor",
+          firstFloorDesc:
+            "Features three bedrooms including a 4-person suite with an en-suite youth room and master bedroom. All rooms are equipped with double beds, A/C, TVs, balconies, and bathrooms.",
+          atticFloor: "Attic (Top Floor)",
+          atticFloorDesc:
+            "An independent flat featuring a living room, open American kitchen, 6-person dining table, and a private terrace. Includes two bedrooms (one double, one twin), A/C, TV, and an integrated water filtration system.",
+          amenitiesTitle: "Amenities & Location",
+          am1: "High-speed Wi-Fi on every floor",
+          am2: "Fully equipped kitchens (Filter, Turkish, Capsule)",
+          am3: "2 washing machines & 2 dishwashers",
+          am4: "Free parking right in front of the house",
+          am5: "Walking distance to Kum Denizi Beach",
+          am6: "30 mins to Izmir city center and Çeşme",
+          contactTitle: "Get in Touch",
+          contactDesc:
+            "Have questions or want to check availability? Message us directly on WhatsApp for a quick response.",
+          contactBtn: "Chat on WhatsApp",
+          footerRules:
+            "Minimum stay: 3 nights. Check-in: 17:00 | Check-out: 11:00.",
+          footerPrice:
+            "35,000 TL / day (Valid for up to 8 guests. Extra charge for more).",
+          footerLaw:
+            "Mandatory ID notification for all staying guests is required by law.",
+        },
+        tr: {
+          logoTitle: "Urla Sahil Evi",
+          heroTitle: "Urla'da Huzurlu Deniz Kenarı Triplex",
+          heroSubtitle:
+            "Denize sadece 150m • 18 kişiye kadar konaklama • Karantina Adası Manzaralı",
+          heroBtn: "Hemen Rezervasyon Yap",
+          tourTitle: "Havadan Görünüm",
+          aboutTitle: "Mekân Hakkında",
+          aboutDesc:
+            "Müstakil triplex 7+2 evimiz denize sadece 150 metre mesafededir, 320 metrekare bahçe içinde sakin bir sahil inzivası arayanlar için terasından deniz ve ada manzarası, yeşiller içindeki verandalar ve bahçesinde olağanüstü bir konum sunar. Evimizde iki mutfak ve toplam beş banyo+tuvalet bulunmaktadır.",
+          floorsTitle: "Kat Planları",
+          groundFloor: "Zemin Kat",
+          groundFloorDesc:
+            "Klimalı, şömineli ve 8 kişilik yemek masalı rahat oturma salonu. Geniş modern mutfak, yemek masası ve salıncak bulunan ön ve arka verandalar. Çalışma masalı çift kişilik yataklı bir oda ve banyo.",
+          firstFloor: "Birinci Kat",
+          firstFloorDesc:
+            "İçinde genç odası barındıran 4 kişilik suit dahil üç yatak odası. Tüm odalarda çift kişilik yatak, klima, TV, balkon ve banyo mevcuttur.",
+          atticFloor: "Çatı Katı",
+          atticFloorDesc:
+            "Bağımsız yaşam alanı; açık amerikan mutfak, klimalı salon, özel teras. Biri çift, diğeri iki tek kişilik yataklı iki oda ve şebeke suyu filtre sistemi içerir.",
+          amenitiesTitle: "Olanaklar ve Konum",
+          am1: "Her katta yüksek hızlı Wi-Fi yansıtıcılar",
+          am2: "Tam donanımlı mutfaklar (Filtre, Türk, Kapsül)",
+          am3: "2 çamaşır ve 2 bulaşık makinesi",
+          am4: "Evin hemen önünde ücretsiz park yeri",
+          am5: "Kum Denizi Plajı'na yürüme mesafesinde",
+          am6: "İzmir şehir merkezi ve Çeşme'ye sadece 30 dakika",
+          contactTitle: "İletişime Geçin",
+          contactDesc:
+            "Sorularınız mı var veya müsaitlik durumunu mu öğrenmek istiyorsunuz? Hızlı yanıt için bize WhatsApp üzerinden yazın.",
+          contactBtn: "WhatsApp'tan Yazın",
+          footerRules: "En az 3 gece konaklama. Giriş: 17:00 | Çıkış: 11:00.",
+          footerPrice:
+            "35.000 TL / gün (8 kişiye kadar geçerlidir. Ek kişiler için ek ücret alınır).",
+          footerLaw:
+            "Tüm konaklayanların kimlik bilgilerinin emniyete bildirim zorunluluğu vardır.",
+        },
+        de: {
+          logoTitle: "Urla Küstenrückzug",
+          heroTitle: "Ruhiges Triplex am Meer in Urla",
+          heroSubtitle:
+            "Nur 150m vom Meer entfernt • Bis zu 18 Gäste • Blick auf die Karantina-Insel",
+          heroBtn: "Jetzt Buchen",
+          tourTitle: "Luftaufnahme",
+          aboutTitle: "Über die Unterkunft",
+          aboutDesc:
+            "Unser freistehendes 7+2 Triplex-Haus bietet eine außergewöhnliche Lage für Ruhesuchende. Nur 150 Meter vom Meer entfernt, eingebettet in einen 320 qm großen Garten, bietet es Meer- und Inselblick. Mit zwei Küchen und fünf Badezimmern bietet es Platz für bis zu 18 Personen.",
+          floorsTitle: "Grundrisse",
+          groundFloor: "Erdgeschoss",
+          groundFloorDesc:
+            "Wohnzimmer mit Klimaanlage, Kamin und Esstisch. Moderne Küche, Veranden vorne und hinten mit Sitzgelegenheiten. Beinhaltet ein Doppelzimmer mit Arbeitsbereich und Bad.",
+          firstFloor: "Erste Etage",
+          firstFloorDesc:
+            "Drei Schlafzimmer, darunter eine 4-Personen-Suite. Alle Zimmer mit Doppelbetten, Klimaanlage, Fernseher, Balkon und Bad ausgestattet.",
+          atticFloor: "Dachgeschoss",
+          atticFloorDesc:
+            "Unabhängige Wohnung mit Wohnzimmer, offener amerikanischer Küche und privater Terrasse. Zwei Schlafzimmer, Klimaanlage, TV und Wasserfiltersystem.",
+          amenitiesTitle: "Ausstattung & Lage",
+          am1: "Highspeed-WLAN auf jeder Etage",
+          am2: "Voll ausgestattete Küchen (Filter-, Türkische-, Kapsel-Kaffee)",
+          am3: "2 Waschmaschinen & 2 Geschirrspüler",
+          am4: "Kostenlose Parkplätze direkt vor dem Haus",
+          am5: "Strand Kum Denizi fußläufig erreichbar",
+          am6: "30 Min. ins Zentrum von Izmir und nach Çeşme",
+          contactTitle: "Kontaktieren Sie uns",
+          contactDesc:
+            "Haben Sie Fragen oder möchten Sie die Verfügbarkeit prüfen? Schreiben Sie uns direkt über WhatsApp.",
+          contactBtn: "Auf WhatsApp chatten",
+          footerRules:
+            "Mindestaufenthalt: 3 Nächte. Check-in: 17:00 | Check-out: 11:00.",
+          footerPrice:
+            "35.000 TL / Tag (Gültig für bis zu 8 Gäste. Aufpreis für weitere Gäste).",
+          footerLaw:
+            "Die Meldung des Personalausweises ist für alle übernachtenden Gäste gesetzlich vorgeschrieben.",
+        },
+        ru: {
+          logoTitle: "Прибрежный отдых в Урле",
+          heroTitle: "Тихая трехэтажная вилла у моря",
+          heroSubtitle:
+            "Всего 150 м до моря • До 18 гостей • Вид на остров Карантин",
+          heroBtn: "Забронировать",
+          tourTitle: "Аэротур",
+          aboutTitle: "О недвижимости",
+          aboutDesc:
+            "Наша отдельная трехэтажная вилла 7+2 предлагает уникальное расположение для спокойного отдыха. Находится всего в 150 метрах от моря на участке 320 кв.м с видом на море и остров. С двумя кухнями и пятью ванными комнатами вилла вмещает до 18 человек.",
+          floorsTitle: "Планировка этажей",
+          groundFloor: "Первый этаж",
+          groundFloorDesc:
+            "Гостиная с кондиционером, камином и обеденным столом. Современная кухня, просторные веранды. Включает спальню с двуспальной кроватью, рабочей зоной и ванной комнатой.",
+          firstFloor: "Второй этаж",
+          firstFloorDesc:
+            "Три спальни, включая 4-местный люкс. Все номера оснащены двуспальными кроватями, кондиционером, телевизором, балконом и ванной.",
+          atticFloor: "Мансарда (Верхний этаж)",
+          atticFloorDesc:
+            "Независимая квартира с гостиной, открытой кухней и собственной террасой. Две спальни, кондиционер, телевизор и система фильтрации воды.",
+          amenitiesTitle: "Удобства и расположение",
+          am1: "Высокоскоростной Wi-Fi на каждом этаже",
+          am2: "Оборудованные кухни (разные кофемашины)",
+          am3: "2 стиральные и 2 посудомоечные машины",
+          am4: "Бесплатная парковка перед домом",
+          am5: "В шаговой доступности пляж Кум Денизи",
+          am6: "30 минут до центра Измира и Чешме",
+          contactTitle: "Свяжитесь с нами",
+          contactDesc:
+            "Есть вопросы или хотите узнать о наличии мест? Напишите нам прямо в WhatsApp для быстрого ответа.",
+          contactBtn: "Написать в WhatsApp",
+          footerRules: "Минимальный срок: 3 ночи. Заезд: 17:00 | Выезд: 11:00.",
+          footerPrice: "35 000 TL / день (до 8 гостей. Доплата за остальных).",
+          footerLaw:
+            "Уведомление об удостоверении личности обязательно по закону для всех гостей.",
+        },
+      };
+
+      function setLanguage(lang) {
+        document
+          .querySelectorAll(".lang-switch button")
+          .forEach((btn) => btn.classList.remove("active"));
+        document.getElementById(`btn-${lang}`).classList.add("active");
+
+        document.querySelectorAll("[data-key]").forEach((elem) => {
+          const key = elem.getAttribute("data-key");
+          if (translations[lang] && translations[lang][key]) {
+            if (elem.tagName === "INPUT" || elem.tagName === "TEXTAREA") {
+              elem.placeholder = translations[lang][key];
+            } else {
+              elem.textContent = translations[lang][key];
+            }
+          }
+        });
+
+        document.documentElement.lang = lang;
+      }
+      setLanguage("tr");
+    </script>
+  </body>
+</html>
